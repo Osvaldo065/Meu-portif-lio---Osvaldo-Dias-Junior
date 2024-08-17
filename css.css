@@ -3,6 +3,9 @@
 *{
     height: auto;
 }
+body{
+    background-color: black;
+}
 img {
     width: 400px;
     height: -30px;
