@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.head-bar{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.nav-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.head-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list-nav{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.Logo{
+    display: flex;
+    align-items: center;
+}
+
+.Sobre-mim, .Contato, .Curriculo, .Contate-me{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    gap: 10px;
+}
+
+.Logo img.logo-osvaldo, .Sobre-mim img.icone-sobre-mim, .Contato img.icone-contato, .Curriculo img.icone-curriculo{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.Logo a, .Sobre-mim a, .Contato a, .Curriculo a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-contato a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.btn-contato{
+    width: 150px;
+    height: 40px;
+    padding: 8px, 16px;
+    font-size: 14px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
