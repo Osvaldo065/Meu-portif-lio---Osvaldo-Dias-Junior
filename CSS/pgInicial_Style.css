@@ -6,7 +6,6 @@
 }
 body{
     background-color: black;
-    color: white;
     font-family: Arial, sans-serif;
     display: flex;
     margin: 0;
@@ -44,11 +43,6 @@ body{
     justify-content: flex-end;
     margin-left: auto;
 }
-.Logo{
-    display: flex;
-    align-items: center;
-}
-
 .Sobre-mim, .Contato, .Curriculo, .Contate-me{
     display: flex;
     align-items: center;
@@ -57,21 +51,21 @@ body{
     gap: 10px;
 }
 
-.Logo img.logo-osvaldo, .Sobre-mim img.icone-sobre-mim, .Contato img.icone-contato, .Curriculo img.icone-curriculo{
+.Sobre-mim img.icone-sobre-mim, .Contato img.icone-contato, .Curriculo img.icone-curriculo{
     width: 24px;
     height: 24px;
     object-fit: contain;
 }
 
-.Logo a, .Sobre-mim a, .Contato a, .Curriculo a{
+.Sobre-mim a, .Contato a, .Curriculo a{
     text-decoration: none;
-    color: white;
+    color:#045955;
     font-size: 16px;
 }
 
 .btn-contato a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 16px;
 }
 
@@ -80,9 +74,78 @@ body{
     height: 40px;
     padding: 8px, 16px;
     font-size: 14px;
-    background-color: white;
-    color: black;
+    background-color: #045955;
     border: none;
     border-radius: 6px;
     cursor: pointer;
 }
+
+.conteiner-figure{
+    display: flex;
+    position: absolute;
+    top: 20px;
+}
+
+.figure{
+    margin: 45px;
+    display: flex;
+}
+
+.figure-img{
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    display: flex;
+
+}
+
+.info-class{
+    display: flex;
+    position: absolute;
+    top: 150px;
+    right: 350px;
+}
+
+.profissão{
+    display: flex;
+    font-size: 22px;
+    top: 50px;
+    color: white;
+    background:linear-gradient(#073734, #045955);
+    border-radius: 10px;
+}
+
+.name{
+    font-family: Arial, sans-serif;
+    top: 50px;
+    position: absolute;
+    display: flex;
+    font-size: 40px;
+    background-image: linear-gradient(#073734, #045955);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.btn-success{
+    width: 95px;
+    height: auto;
+    font-size: 18px;
+    top: 200px;
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+}
+
+.btn-outline-success{
+    width: 95px;
+    height: auto;
+    font-size: 18px ;
+    top: 200px;
+    position: absolute;
+    display: flex;
+    right: 60px;
+    color: white;
+
+}
+
