@@ -5,7 +5,7 @@
     margin: 0%;
 }
 body{
-    background-color: black;
+    background-color:#151515 ;
     font-family: Arial, sans-serif;
     display: flex;
     margin: 0;
@@ -23,7 +23,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
 }
 
 .head-contact{
@@ -102,35 +102,49 @@ body{
 .info-class{
     display: flex;
     position: absolute;
-    top: 150px;
-    right: 350px;
+    top: 200px;
+    left: 50%;
+    flex-direction: column;
 }
 
 .profissão{
     display: flex;
-    font-size: 22px;
-    top: 50px;
+    font-size: 16px;
     color: white;
     background:linear-gradient(#073734, #045955);
-    border-radius: 10px;
+    border-radius: 8px;
+    padding: 8px, 12px;
+    width: 240px;
 }
+
 
 .name{
     font-family: Arial, sans-serif;
-    top: 50px;
-    position: absolute;
+    top: 65px;
     display: flex;
     font-size: 40px;
     background-image: linear-gradient(#073734, #045955);
     -webkit-background-clip: text;
     color: transparent;
     font-weight: bold;
+    padding: 0;
+    white-space: nowrap;
+}
+
+
+.saudacao{
+    display: flex;
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    width: 500px;
+    height: auto;
 }
 
 .btn-success{
-    width: 95px;
-    height: auto;
-    font-size: 18px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
     top: 200px;
     position: absolute;
     display: flex;
@@ -138,14 +152,19 @@ body{
 }
 
 .btn-outline-success{
-    width: 95px;
-    height: auto;
-    font-size: 18px ;
+    width: 100px;
+    height: 50px;
+    font-size: 20px ;
     top: 200px;
     position: absolute;
     display: flex;
-    right: 60px;
+    left: 130px;
     color: white;
-
 }
 
+/*.secao-sobre{
+    background-image: linear-gradient(#073734, #045955);
+   
+    
+}
+*/
