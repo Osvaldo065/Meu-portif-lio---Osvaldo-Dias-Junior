@@ -59,7 +59,7 @@ body{
 
 .Sobre-mim a, .Contato a, .Curriculo a{
     text-decoration: none;
-    color:#045955;
+    color:white;
     font-size: 16px;
 }
 
@@ -119,7 +119,6 @@ body{
 
 
 .name{
-    font-family: Arial, sans-serif;
     top: 65px;
     display: flex;
     font-size: 40px;
@@ -162,9 +161,46 @@ body{
     color: white;
 }
 
-/*.secao-sobre{
+.secao-sobre{
     background-image: linear-gradient(#073734, #045955);
-   
-    
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    top: 700px;
+    width: 100%;
 }
-*/
+
+.title-sobre{
+    color:white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+}
+
+.descricao-sobre{
+    display: flex;
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+    justify-content: center;
+    max-width: 80%;
+    margin: 0 auto;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
+}
+
+.icons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.icon-linked, .icon-git{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
