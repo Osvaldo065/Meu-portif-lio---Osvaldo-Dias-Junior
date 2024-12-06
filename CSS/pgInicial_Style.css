@@ -1,17 +1,32 @@
 @charset "UTF-8";
 
+/*DEFINIÇÕES PARA A TELA*/
 *{
     padding: 0%;
     margin: 0%;
 }
 body{
     background-color:#151515 ;
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     display: flex;
     margin: 0;
     padding: 0;
     
 }
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color:#045955 ;
+}
+
+
+
+/* CABEÇALHO - MENU */
 
 .head-bar{
     padding: 10px;
@@ -43,7 +58,7 @@ body{
     justify-content: flex-end;
     margin-left: auto;
 }
-.Sobre-mim, .Contato, .Curriculo, .Contate-me{
+.Sobre-mim, .Contato, .home, .Contate-me{
     display: flex;
     align-items: center;
     padding: 5px;
@@ -51,22 +66,31 @@ body{
     gap: 10px;
 }
 
-.Sobre-mim img.icone-sobre-mim, .Contato img.icone-contato, .Curriculo img.icone-curriculo{
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-}
-
-.Sobre-mim a, .Contato a, .Curriculo a{
+.Sobre-mim a, .Contato a, .home a, .especialidades a{
     text-decoration: none;
     color:white;
     font-size: 16px;
+}
+
+.Sobre-mim a:hover, .Contato a:hover, .home a:hover, .especialidades a:hover{
+    color: #045955;
+    transform: scale(1.05);
 }
 
 .btn-contato a{
     text-decoration: none;
     color: white;
     font-size: 16px;
+}
+
+.btn-contato a:hover{
+    color: black;
+    transform: scale(1.05);
+}
+
+.btn-contato:hover{
+    box-shadow: 0px, 0px, 8px #045955;
+    transform: scale(1.05);
 }
 
 .btn-contato{
@@ -80,38 +104,36 @@ body{
     cursor: pointer;
 }
 
+/* HOME DO SITE FOTO E APRESENTAÇÃO */
+
 .conteiner-figure{
     display: flex;
     position: absolute;
-    top: 20px;
-}
-
-.figure{
-    margin: 45px;
-    display: flex;
+    top: 100px;
+    left: 60%;
 }
 
 .figure-img{
-    max-width: 100%;
+    max-width: 80%;
     width: 550px;
     height: auto;
     display: flex;
-
 }
 
+/* Informações da saudação */
 .info-class{
     display: flex;
     position: absolute;
     top: 200px;
-    left: 50%;
+    left: 10%;
     flex-direction: column;
+    gap: 5px;
 }
 
-.profissão{
+.saudacao{
     display: flex;
-    font-size: 16px;
+    font-size: 24px;
     color: white;
-    background:linear-gradient(#073734, #045955);
     border-radius: 8px;
     padding: 8px, 12px;
     width: 240px;
@@ -119,9 +141,9 @@ body{
 
 
 .name{
-    top: 65px;
+    top: 50px;
     display: flex;
-    font-size: 40px;
+    font-size: 48px;
     background-image: linear-gradient(#073734, #045955);
     -webkit-background-clip: text;
     color: transparent;
@@ -131,35 +153,64 @@ body{
 }
 
 
-.saudacao{
+.apresentacao{
     display: flex;
     color: white;
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.5;
     width: 500px;
     height: auto;
 }
 
-.btn-success{
-    width: 100px;
-    height: 50px;
-    font-size: 20px;
-    top: 200px;
-    position: absolute;
+/*Seção minhas especialidades*/ 
+
+.sec-Especialidades{
     display: flex;
-    cursor: pointer;
+    width: 60%;
+    padding: 10px;
 }
 
-.btn-outline-success{
-    width: 100px;
-    height: 50px;
-    font-size: 20px ;
-    top: 200px;
-    position: absolute;
-    display: flex;
-    left: 130px;
-    color: white;
+.sec-Especialidades .interface-espc {
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
 }
+
+.sec-Especialidade .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.sec-Especialidades .especialidades-box{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    padding: 40px;
+    border: 2px solid white;
+    margin-top:45px;
+    border-radius: 20px;
+}
+
+.sec-Especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #073734;
+}
+
+.sec-Especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+/* SEÇÃO SOBRE MIM SEGUNDA PÁGINA */
 
 .secao-sobre{
     background-image: linear-gradient(#073734, #045955);
@@ -168,6 +219,7 @@ body{
     position: absolute;
     top: 700px;
     width: 100%;
+    right: 0;
 }
 
 .title-sobre{
