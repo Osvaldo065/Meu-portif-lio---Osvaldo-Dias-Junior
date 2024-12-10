@@ -8,23 +8,7 @@
 body{
     background-color:#151515 ;
     font-family: "Montserrat", sans-serif;
-    display: flex;
-    margin: 0;
-    padding: 0;
-    
 }
-
-h2.titulo{
-    color: white;
-    font-size: 38px;
-    text-align: center;
-}
-
-h2.titulo span{
-    color:#045955 ;
-}
-
-
 
 /* CABEÇALHO - MENU */
 
@@ -108,26 +92,26 @@ h2.titulo span{
 
 .conteiner-figure{
     display: flex;
-    position: absolute;
-    top: 100px;
-    left: 60%;
+    margin: 50px 20%;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .figure-img{
-    max-width: 80%;
-    width: 550px;
+    max-width: 100%;
+    width: 450px;
     height: auto;
     display: flex;
+    border-radius: 8px;
 }
 
 /* Informações da saudação */
 .info-class{
     display: flex;
-    position: absolute;
-    top: 200px;
-    left: 10%;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    max-width: 50%;
 }
 
 .saudacao{
@@ -136,13 +120,11 @@ h2.titulo span{
     color: white;
     border-radius: 8px;
     padding: 8px, 12px;
-    width: 240px;
+    width: 100%;
 }
 
 
 .name{
-    top: 50px;
-    display: flex;
     font-size: 48px;
     background-image: linear-gradient(#073734, #045955);
     -webkit-background-clip: text;
@@ -162,64 +144,15 @@ h2.titulo span{
     height: auto;
 }
 
-/*Seção minhas especialidades*/ 
-
-.sec-Especialidades{
-    display: flex;
-    width: 60%;
-    padding: 10px;
-}
-
-.sec-Especialidades .interface-espc {
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-}
-
-.sec-Especialidade .flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.sec-Especialidades .especialidades-box{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: flex-end;
-    color: white;
-    padding: 40px;
-    border: 2px solid white;
-    margin-top:45px;
-    border-radius: 20px;
-}
-
-.sec-Especialidades .especialidades-box i{
-    font-size: 70px;
-    color: #073734;
-}
-
-.sec-Especialidades .especialidades-box h3{
-    font-size: 28px;
-    margin: 15px 0;
-}
-
-
 /* SEÇÃO SOBRE MIM SEGUNDA PÁGINA */
 
 .secao-sobre{
     background-image: linear-gradient(#073734, #045955);
     flex-direction: column;
     display: flex;
-    position: absolute;
-    top: 700px;
     width: 100%;
-    right: 0;
+    padding: 50px 20px ;
+    box-sizing: border-box;
 }
 
 .title-sobre{
@@ -227,7 +160,8 @@ h2.titulo span{
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 10vh;
+   font-size: 2.5rem;
+   margin-bottom: 20px;
 }
 
 .descricao-sobre{
@@ -237,7 +171,7 @@ h2.titulo span{
     text-align: center;
     justify-content: center;
     max-width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     word-break: break-word;
     overflow-wrap: anywhere;
     white-space: normal;
@@ -248,11 +182,86 @@ h2.titulo span{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-top: 30px;
 }
 
 .icon-linked, .icon-git{
     width: 45px;
     height: 45px;
     object-fit: contain;
+}
+
+/*Seção minhas especialidades*/ 
+
+.Back-end i, .MySQL i, .Banco-Dados i{
+    font-size: 2.5rem;
+    color: #073734;
+    margin-bottom: 10px;
+}
+
+.Back-end , .MySQL , .Banco-Dados {
+    color: white;
+}
+
+
+.title-espc span{
+    color: #045955;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.title-espc{
+    color:white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.sec-especialidades{
+    padding: 50px 20px;
+}
+
+.box-especialidade{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.espc-list{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.espc-list li{
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.espc-list li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.espc-list li h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.espc-list li p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #f1f1f1; 
 }
