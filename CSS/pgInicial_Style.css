@@ -90,37 +90,35 @@ body{
 
 /* HOME DO SITE FOTO E APRESENTAÇÃO */
 
+.conteiner-flex{
+    display:flex;
+}
+
 .conteiner-figure{
     display: flex;
-    margin: 50px 20%;
-    justify-content: flex-end;
     align-items: center;
 }
 
 .figure-img{
     max-width: 100%;
-    width: 450px;
+    width: 500px;
     height: auto;
-    display: flex;
     border-radius: 8px;
 }
 
 /* Informações da saudação */
-.info-class{
+
+.info-class {
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
-    gap: 10px;
-    max-width: 50%;
+    margin: 150px;
 }
 
 .saudacao{
     display: flex;
     font-size: 24px;
     color: white;
-    border-radius: 8px;
     padding: 8px, 12px;
-    width: 100%;
 }
 
 
@@ -143,7 +141,6 @@ body{
     width: 500px;
     height: auto;
 }
-
 /* SEÇÃO SOBRE MIM SEGUNDA PÁGINA */
 
 .secao-sobre{
