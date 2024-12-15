@@ -25,13 +25,13 @@
                 <div class="head-contact">
                     <ul class="list-nav">
                         <li class="home">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="especialidades">
-                            <a href="#">Especialidades</a>
+                            <a href="#home">Home</a>
                         </li>
                         <li class="Sobre-mim">
-                            <a href="#">Sobre-mim</a>
+                            <a href="#sobre">Sobre-mim</a>
+                        </li>
+                        <li class="especialidades">
+                            <a href="#especialidades">Especialidades</a>
                         </li>
                         <li class="Contato">
                             <a href="#">Contatos</a>
@@ -48,12 +48,12 @@
             </nav>
         </header>
         <main>
-            <div class="conteiner-flex">
+            <div class="conteiner-flex" id="home">
                 <div class="conteiner-figure">
                     <figure class="figure">
                         <img src="Img/foto perfil dias.svg"
-                        class="figure-img img-fluid rounded"
-                        alt="Foto de osvaldo">
+                            class="figure-img img-fluid rounded"
+                            alt="Foto de osvaldo">
                     </figure>
                 </div>
                 <div class="info-class ">
@@ -64,7 +64,7 @@
                         profissional.</p>
                 </div>
             </div>
-            <section class="secao-sobre">
+            <section class="secao-sobre" id="sobre">
                 <h1 class="title-sobre">Sobre mim</h1>
                 <p class="descricao-sobre">
                     Meu nome é Osvaldo Dias, sou estudante de
@@ -81,7 +81,7 @@
                     HTML,
                     CSS e atualmente estou estudando C#.
                 </p>
-                <div class="icons-container">
+                <div class="icons-container" id="especialidades">
                     <a
                         href="https://www.linkedin.com/in/osvaldo-dias-junior-02b30a266/"
                         target="_blank" rel="noopener noreferrer">
@@ -144,6 +144,65 @@
                     </ul>
                 </div>
             </section>
-        </main>
-    </body>
-</html>
+            <div class="experiencias-flex">
+                <h1 class="title-exp">MINHAS <span> EXPERIÊNCIAS</span></h1>
+                <div class="box-experiencias">
+                    <ul class="list-exps">
+                        <li class="expUm">
+                            <img class="img-expUm" src="Img/logo-redeflex.png"
+                                alt="logo redeFlex">
+                            <h3 class="exp-01">Analista de Desenvolvimento</h3>
+                            <h6 class="date-exp-01">Inicío: 16/11/2024 -
+                                Conclusão: até o momento </h6>
+                            <p class="desc-exp-01">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit.
+                                Curabitur sit amet nisl a nisi scelerisque
+                                eleifend.
+                                Phasellus eget ligula at nisi accumsan luctus.
+                                Integer mollis lorem ut eros tincidunt, id
+                                fringilla velit tristique.
+                            </p>
+                        </li>
+                        <li class="expDois">
+                            <img class="img-expDois" src="Img/logo-redeflex.png"
+                                alt="logo redeFlex">
+                            <h3 class="exp-02">Analista de Governança de TI</h3>
+                            <h6 class="date-exp-02">Inicío: 16/11/2023 -
+                                Conclusão: 16/11/2024 </h6>
+                            <p class="desc-espc-02">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit.
+                                Curabitur sit amet nisl a nisi scelerisque
+                                eleifend.
+                                Phasellus eget ligula at nisi accumsan luctus.
+                                Integer mollis lorem ut eros tincidunt, id
+                                fringilla velit tristique.
+                            </p>
+                        </li>
+                        <li class="expTres">
+                            <img class="img-expTres"
+                                src="Img/toledo-brasil-logotipo.svg"
+                                alt="logo Toledo do Brasil">
+                            <h3 class="exp-03">Auxiliar Administrativo I</h3>
+                            <h6 class="date-exp-02">Inicío: 15/07/2023 -
+                                Conclusão: 13/11/2023 </h6>
+                            <p class="desc-exp-03">Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit.
+                                Curabitur sit amet nisl a nisi scelerisque
+                                eleifend.
+                                Phasellus eget ligula at nisi accumsan luctus.
+                                Integer mollis lorem ut eros tincidunt, id
+                                fringilla velit tristique.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </main>
+            <footer class="final-port">
+                <p class="text-rodape">Criado por: Osvaldo Dias Junior -
+                    Todos os direitos reservados @2024</p>
+            </footer>
+        </body>
+    </html>
