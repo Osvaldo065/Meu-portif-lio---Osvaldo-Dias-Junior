@@ -16,6 +16,7 @@
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="CSS/pgInicial_Style.css">
+        <script src="JavaScript/Funcao_Menu.JS" defer></script>
     </head>
     <body>
         <script
@@ -46,163 +47,223 @@
                     </ul>
                 </div>
             </nav>
-        </header>
-        <main>
-            <div class="conteiner-flex" id="home">
-                <div class="conteiner-figure">
-                    <figure class="figure">
-                        <img src="Img/foto perfil dias.svg"
-                            class="figure-img img-fluid rounded"
-                            alt="Foto de osvaldo">
-                    </figure>
-                </div>
-                <div class="info-class ">
-                    <p class="saudacao">Olá, meu nome é</p>
-                    <h2 class="name">Osvaldo Dias Junior</h2>
-                    <p class="apresentacao">Sou Desenvolvedor Back-end, venha
-                        Conhecer os meus projetos e minha trajetória
-                        profissional.</p>
-                </div>
+            <div class="btn-abrirMenu" id="btn-menu">
+                <i class="bi bi-list"></i>
             </div>
-            <section class="secao-sobre" id="sobre">
-                <h1 class="title-sobre">Sobre mim</h1>
-                <p class="descricao-sobre">
-                    Meu nome é Osvaldo Dias, sou estudante de
-                    Análise e
-                    Desenvolvimento de Sistemas na Fatec e
-                    trabalho como Desenvolvedor Trainee na redeFlex
-                    Comércio e
-                    Serviços de Telefonia, em Cuiabá-MT.
-                    Sou dedicado e sempre busco aprender e crescer
-                    com as
-                    oportunidades que tenho.
-                    Tenho experiência com Python, MySQL, PostgreSQL,
-                    Power BI,
-                    HTML,
-                    CSS e atualmente estou estudando C#.
-                </p>
-                <div class="icons-container" id="especialidades">
-                    <a
-                        href="https://www.linkedin.com/in/osvaldo-dias-junior-02b30a266/"
-                        target="_blank" rel="noopener noreferrer">
-                        <img class="icon-linked"
-                            src="Img/ícone-contato.png"
-                            alt="icone - linkedin">
-                    </a>
-                    <a href="https://github.com/Osvaldo065"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <img class="icon-git"
-                            src="Img/icoone-github.png"
-                            alt="icone-GitHub">
-                    </a>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
                 </div>
-            </section>
-            <section class="sec-especialidades">
-                <h1 class="title-espc">MINHAS <span> ESPECIALIDADES</span></h1>
-                <div class="box-especialidade">
-                    <ul class="espc-list">
-                        <li class="Back-end">
-                            <i class="bi bi-code-square"></i>
-                            <h3 class="espc-01">Back-end</h3>
-                            <p class="desc-espc-01">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing elit.
-                                Curabitur sit amet nisl a nisi scelerisque
-                                eleifend.
-                                Phasellus eget ligula at nisi accumsan luctus.
-                                Integer mollis lorem ut eros tincidunt, id
-                                fringilla velit tristique.
-                            </p>
+                <nav class="nav-mobile">
+                    <ul class="list-nav-mobile">
+                        <li class="home-mobile">
+                            <a href="#home">Home</a>
                         </li>
-                        <li class="MySQL">
-                            <i class="bi bi-bar-chart-fill"></i>
-                            <h3 class="espc-02">PowerBI</h3>
-                            <p class="desc-espc-02">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing elit.
-                                Curabitur sit amet nisl a nisi scelerisque
-                                eleifend.
-                                Phasellus eget ligula at nisi accumsan luctus.
-                                Integer mollis lorem ut eros tincidunt, id
-                                fringilla velit tristique.
-                            </p>
+                        <li class="Sobre-mim-mobile">
+                            <a href="#sobre">Sobre-mim</a>
                         </li>
-                        <li class="Banco-Dados">
-                            <i class="bi bi-database-fill"></i>
-                            <h3 class="espc-03">My SQL</h3>
-                            <p class="desc-espc-03">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing elit.
-                                Curabitur sit amet nisl a nisi scelerisque
-                                eleifend.
-                                Phasellus eget ligula at nisi accumsan luctus.
-                                Integer mollis lorem ut eros tincidunt, id
-                                fringilla velit tristique.
-                            </p>
+                        <li class="especialidades-mobile">
+                            <a href="#especialidades">Especialidades</a>
+                        </li>
+                        <li class="Contato-mobile">
+                            <a href="#">Contatos</a>
                         </li>
                     </ul>
                 </div>
-            </section>
-            <div class="experiencias-flex">
-                <h1 class="title-exp">MINHAS <span> EXPERIÊNCIAS</span></h1>
-                <div class="box-experiencias">
-                    <ul class="list-exps">
-                        <li class="expUm">
-                            <img class="img-expUm" src="Img/logo-redeflex.png"
-                                alt="logo redeFlex">
-                            <h3 class="exp-01">Analista de Desenvolvimento</h3>
-                            <h6 class="date-exp-01">Inicío: 16/11/2024 -
-                                Conclusão: até o momento </h6>
-                            <p class="desc-exp-01">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing elit.
-                                Curabitur sit amet nisl a nisi scelerisque
-                                eleifend.
-                                Phasellus eget ligula at nisi accumsan luctus.
-                                Integer mollis lorem ut eros tincidunt, id
-                                fringilla velit tristique.
-                            </p>
-                        </li>
-                        <li class="expDois">
-                            <img class="img-expDois" src="Img/logo-redeflex.png"
-                                alt="logo redeFlex">
-                            <h3 class="exp-02">Analista de Governança de TI</h3>
-                            <h6 class="date-exp-02">Inicío: 16/11/2023 -
-                                Conclusão: 16/11/2024 </h6>
-                            <p class="desc-espc-02">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing elit.
-                                Curabitur sit amet nisl a nisi scelerisque
-                                eleifend.
-                                Phasellus eget ligula at nisi accumsan luctus.
-                                Integer mollis lorem ut eros tincidunt, id
-                                fringilla velit tristique.
-                            </p>
-                        </li>
-                        <li class="expTres">
-                            <img class="img-expTres"
-                                src="Img/toledo-brasil-logotipo.svg"
-                                alt="logo Toledo do Brasil">
-                            <h3 class="exp-03">Auxiliar Administrativo I</h3>
-                            <h6 class="date-exp-02">Inicío: 15/07/2023 -
-                                Conclusão: 13/11/2023 </h6>
-                            <p class="desc-exp-03">Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing elit.
-                                Curabitur sit amet nisl a nisi scelerisque
-                                eleifend.
-                                Phasellus eget ligula at nisi accumsan luctus.
-                                Integer mollis lorem ut eros tincidunt, id
-                                fringilla velit tristique.
-                            </p>
-                        </li>
-                    </ul>
+                <div class="overMenu-mobile" id="overMenu-mobile"></div>
+            </header>
+            <main>
+                <div class="conteiner-flex" id="home">
+                    <div class="conteiner-figure">
+                        <figure class="figure">
+                            <img src="Img/foto perfil dias.svg"
+                                class="figure-img img-fluid rounded"
+                                alt="Foto de osvaldo">
+                        </figure>
+                    </div>
+                    <div class="info-class ">
+                        <p class="saudacao">Olá, meu nome é</p>
+                        <h2 class="name">Osvaldo Dias Junior</h2>
+                        <p class="apresentacao">Sou Desenvolvedor
+                            Back-end, venha
+                            Conhecer os meus projetos e minha trajetória
+                            profissional.</p>
+                    </div>
                 </div>
-            </main>
-            <footer class="final-port">
-                <p class="text-rodape">Criado por: Osvaldo Dias Junior -
-                    Todos os direitos reservados @2024</p>
-            </footer>
-        </body>
-    </html>
+                <section class="secao-sobre" id="sobre">
+                    <h1 class="title-sobre">Sobre mim</h1>
+                    <p class="descricao-sobre">
+                        Meu nome é Osvaldo Dias, sou estudante de
+                        Análise e
+                        Desenvolvimento de Sistemas na Fatec e
+                        trabalho como Desenvolvedor Trainee na redeFlex
+                        Comércio e
+                        Serviços de Telefonia, em Cuiabá-MT.
+                        Sou dedicado e sempre busco aprender e crescer
+                        com as
+                        oportunidades que tenho.
+                        Tenho experiência com Python, MySQL, PostgreSQL,
+                        Power BI,
+                        HTML,
+                        CSS e atualmente estou estudando C#.
+                    </p>
+                    <div class="icons-container" id="especialidades">
+                        <a
+                            href="https://www.linkedin.com/in/osvaldo-dias-junior-02b30a266/"
+                            target="_blank" rel="noopener noreferrer">
+                            <img class="icon-linked"
+                                src="Img/ícone-contato.png"
+                                alt="icone - linkedin">
+                        </a>
+                        <a href="https://github.com/Osvaldo065"
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <img class="icon-git"
+                                src="Img/icoone-github.png"
+                                alt="icone-GitHub">
+                        </a>
+                    </div>
+                </section>
+                <section class="sec-especialidades">
+                    <h1 class="title-espc">MINHAS <span>
+                            ESPECIALIDADES</span></h1>
+                    <div class="box-especialidade">
+                        <ul class="espc-list">
+                            <li class="Back-end">
+                                <i class="bi bi-code-square"></i>
+                                <h3 class="espc-01">Back-end</h3>
+                                <p class="desc-espc-01">Lorem ipsum
+                                    dolor sit amet,
+                                    consectetur
+                                    adipiscing elit.
+                                    Curabitur sit amet nisl a nisi
+                                    scelerisque
+                                    eleifend.
+                                    Phasellus eget ligula at nisi
+                                    accumsan luctus.
+                                    Integer mollis lorem ut eros
+                                    tincidunt, id
+                                    fringilla velit tristique.
+                                </p>
+                            </li>
+                            <li class="MySQL">
+                                <i class="bi bi-bar-chart-fill"></i>
+                                <h3 class="espc-02">PowerBI</h3>
+                                <p class="desc-espc-02">Lorem ipsum
+                                    dolor sit amet,
+                                    consectetur
+                                    adipiscing elit.
+                                    Curabitur sit amet nisl a nisi
+                                    scelerisque
+                                    eleifend.
+                                    Phasellus eget ligula at nisi
+                                    accumsan luctus.
+                                    Integer mollis lorem ut eros
+                                    tincidunt, id
+                                    fringilla velit tristique.
+                                </p>
+                            </li>
+                            <li class="Banco-Dados">
+                                <i class="bi bi-database-fill"></i>
+                                <h3 class="espc-03">My SQL</h3>
+                                <p class="desc-espc-03">Lorem ipsum
+                                    dolor sit amet,
+                                    consectetur
+                                    adipiscing elit.
+                                    Curabitur sit amet nisl a nisi
+                                    scelerisque
+                                    eleifend.
+                                    Phasellus eget ligula at nisi
+                                    accumsan luctus.
+                                    Integer mollis lorem ut eros
+                                    tincidunt, id
+                                    fringilla velit tristique.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="experiencias-flex">
+                    <h1 class="title-exp">MINHAS <span>
+                            EXPERIÊNCIAS</span></h1>
+                    <div class="box-experiencias">
+                        <ul class="list-exps">
+                            <li class="expUm">
+                                <img class="img-expUm"
+                                    src="Img/Redeflex-lg.png"
+                                    alt="logo redeFlex">
+                                <h3 class="exp-01">Analista de
+                                    Desenvolvimento</h3>
+                                <h6 class="date-exp-01">Inicío:
+                                    16/11/2024 -
+                                    Conclusão: até o momento </h6>
+                                <p class="desc-exp-01">Lorem ipsum dolor
+                                    sit amet,
+                                    consectetur
+                                    adipiscing elit.
+                                    Curabitur sit amet nisl a nisi
+                                    scelerisque
+                                    eleifend.
+                                    Phasellus eget ligula at nisi
+                                    accumsan luctus.
+                                    Integer mollis lorem ut eros
+                                    tincidunt, id
+                                    fringilla velit tristique.
+                                </p>
+                            </li>
+                            <li class="expDois">
+                                <img class="img-expDois"
+                                    src="Img/Redeflex-lg.png"
+                                    alt="logo redeFlex">
+                                <h3 class="exp-02">Analista de
+                                    Governança de TI</h3>
+                                <h6 class="date-exp-02">Inicío:
+                                    16/11/2023 -
+                                    Conclusão: 16/11/2024 </h6>
+                                <p class="desc-espc-02">Lorem ipsum
+                                    dolor sit amet,
+                                    consectetur
+                                    adipiscing elit.
+                                    Curabitur sit amet nisl a nisi
+                                    scelerisque
+                                    eleifend.
+                                    Phasellus eget ligula at nisi
+                                    accumsan luctus.
+                                    Integer mollis lorem ut eros
+                                    tincidunt, id
+                                    fringilla velit tristique.
+                                </p>
+                            </li>
+                            <li class="expTres">
+                                <img class="img-expTres"
+                                    src="Img/toledo-brasil-logotipo.svg"
+                                    alt="logo Toledo do Brasil">
+                                <h3 class="exp-03">Auxiliar
+                                    Administrativo I</h3>
+                                <h6 class="date-exp-02">Inicío:
+                                    15/07/2023 -
+                                    Conclusão: 13/11/2023 </h6>
+                                <p class="desc-exp-03">Lorem ipsum dolor
+                                    sit amet,
+                                    consectetur
+                                    adipiscing elit.
+                                    Curabitur sit amet nisl a nisi
+                                    scelerisque
+                                    eleifend.
+                                    Phasellus eget ligula at nisi
+                                    accumsan luctus.
+                                    Integer mollis lorem ut eros
+                                    tincidunt, id
+                                    fringilla velit tristique.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </main>
+                <footer class="final-port">
+                    <p class="text-rodape">Criado por: Osvaldo Dias
+                        Junior -
+                        Todos os direitos reservados @2024</p>
+                </footer>
+            </body>
+        </html>
